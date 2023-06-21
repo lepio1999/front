@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .main {
+        width: 100%;
+        height: 700px;
+        position: relative;
+    }
+
+    .home {
+        width: 200px;
+        height: 100px;
+        text-align: center;
+        line-height: 100px;
+    }
+
+    .list {
+        width: 900px;
+        height: 800px;
+        position: absolute;
+        right: 150px;
+    }
+
+    table {
+        width: 700px;
+        height: 100px;
+        border: 1px solid black;
+        border-collapse: collapse;
+        margin-top: 40px;
+    }
+
+    td {
+        border: 1px solid black;
+        text-align: center;
+        padding: 10px;
+    }
+
+    tfoot td:last-child {
+        background-color: red;
+        color: white;
+    }
+    img{
+        width: 60px;
+        height: 60px;
+    }
+    .list_img{
+        width: 60px;
+        height: 60px;
+        right: 443px;
+        position: absolute;
+    }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="home">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJwAAACcCAMAAAC9ZjJ/AAAAY1BMVEUAAAD////o6OgjIyNcXFxYWFinp6dGRka3t7evr6+0tLT4+Pi7u7vU1NQrKyvj4+OXl5c6Ojry8vITExPLy8tpaWnCwsIMDAx1dXVTU1NLS0vd3d0zMzNiYmKFhYWdnZ2Pj49QqnZtAAAD3UlEQVR4nO3c65KiMBAF4Oh4Q26K6Ixzf/+n3O1hHRTSuXbS2aqc3xb11QkdFRSxSDiCG6AKJa7slsuuJDwgGa7sD+fr8Xg9H3oyHxGurI4n8S+nY0XEo8G9vYqHbN9IDkuCu7yLSZoLxXEpcNWUBtkTHJgAt5PZSHT+uEJuE6LgxyG9kXTni0N7g2x4cdJZGLPjxCl78z/vvHCa3ry788Ht9Ta/qfDAGdm8VtYdZ7CmvivrjNPOAkF3rjjj3ny6c8RZ9ObRnRtO8Z4lj9vMOuEM59S7OxecdW8Ql/POAWc1C146e5zDmg6xX1lrnNOaDrGeClucc28u3VniPHpz6M4OZ7n3+nZnhXOc0/tYzawNzrs3iE13FjiC3iBVCJznLIwxnwpjnNce8hjjlTXFEa3pENOpMMSRzMIYw+7McKS9Qcy6M8IR9wYx6s4ER94bxKQ7AxzhnN7HoDs9jmx/m0a/32lxQdZ0iPa9QocLMAtjdCurwQXsDaKZCjUuaG8QdXdKXLBZGKOcChUu0B5irlPgIvQGUZx3OC5KbxC8OxQXeE7vg+53GC7Smg7BVhbBRVvTIcjKynFRe4PIu5Pigu+980h3Yxku4iyMkXUnwTH0BpF0N8ex9AaZ7ygzXOQ5vc9sZqc4RttcN8GxremQSoVjmoUxBY5j7g1SYTj23iCFHBf9PUuenQyXRG+QYo5LpDfIbopLYBbGVI841r13nv09LqneINWIS6w3yP6Gu3BLZLkMuJrbIU/9g9tyM+TZAi6ZzXeaYiG6NTcCy7oTiZ5xkFpsuAl4NuLMTcBzFg03AU8jnrkJeJ7FSf8irpzE7Gfl6aQRL9wEPC9pbyVJb8LlB7cBy0cpUvpm85gdfGRacSvkWf18nmuTfJNo2uFjep+grulvX3D65Hbi9378atgm9olz3T58498l9NHpfLse8XutpKw36wQ+oTyvN/Xv/+2Q20uRt5cPuQLBRT4HVxmXcRmXcRn3/+NWxdtSmvrziRv3JX/9T+ojL+6gsC0WHStu2ylxiy9O3Iva5nxhngSnOuMgreNZR4LT/YN76XjbIOMyLuMyLuMyLuMyLuMyLuMyLuMyLuMyLuPG2N2YQ+6+hsIhl9YQ3CEuDrlgiuCQnw6HwvVWOOTqbigc8ixY7F+a8h+HBcJ9IofDcL30R39hcCdkVfE/337Gw31jh0NxpezacxDcFn36MP6f6vYaB3dt0cMp/o3ezXfiALiz4r6L8iED1XRpyXFH5cMt1I9nKC/fq9fm6RY97vpknOZ1ddA87Fr7SJCuu7ttqbn19VdnkU57NL8HzwZO0rg/f2Y8nP8vcF8AAAAASUVORK5CYII=">
+            <strong>홈으로</strong>
+        </div>
+        <div class="list">
+            <table>
+                <caption><strong>CART LIST</strong></caption>
+                <thead>
+                    <div class="list_img"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIIAAACCCAMAAAC93eDPAAAAZlBMVEX///8AAAAwMDDq6uqSkpLn5+cWFhb5+fnIyMju7u6BgYG1tbXi4uL09PT8/Pw/Pz9WVlYmJiY4ODicnJyKioqurq5vb2/V1dXb29tiYmKnp6dbW1toaGgdHR1KSkoICAi+vr53d3dq1KPNAAAE8ElEQVR4nO1a2baDKBC8UVHc9yVGjf7/T47SGtdEBHTmnLGeEqKkhKK7Gvz7u3Hjxo0bN27cuEEPHS1hX0vAyX11Cam+lAJ+bEDNrqQQbVF4hFdSMDYpuFfKYZvCo76agoRHmO+upbiagjtteXYtb3Q1BWfSYl4tyDUFOSBz829S6BWKL6agTZtSQsGYtNjZmYs0X+vf8bo2fxSkQmg2YVxbtu0se+AG8ro1OW+LyTDkw9f0Ey3eflAlSm6muq0tO+KAHsfLjGCT/3sN/1KvAlcpuUXUMhHJY4GGPPIwNtl2AO2gVkYeY/kECphEyGj4GvrfSRCyalCEJs5sTZxQ7Ir0/BlnVOeh4Um++pOJ77ZCMetU10RMUEj6NGdtmo5wHBrV7xFpJyeonkZep5zr2Cq7zrxvv9ahUgR7VNp1nOQmthgpOAnp49ftmo1wGCWVVL5/D4rUCqXGmX5UKLAQlf0Lbdmqc6UVivqbSel6rVBwKju0TDQyE/TmydZRGivRq9ybHKkTCl3+2RIkBRxNrtvpcXeIeDpFX4hcmjAu9HZQcG60Qvm2jGOaXiBXseq5Z4KylknjSSudUDmimP7SPTg6ykzFeE7WcU1zny7ePGm6jEFjLo0WhiInFcnhb8h5FKu9A+QqY//CQ2iOPJhGBPmgGzJaIJJ0K9rLiacbzZMQxMf6XJgnIXiRPuk9Dpm3t0hBZkRfT/obYO9BpCBhlR0pUSQSGsQJUiOxpjpiZkCQh3PVV6THI65FltBLGAUICsd2keAeUYW+DlsXx7IvtXmiAtO8Qq4KBBW1JNyqR9UdHl5F3wFibI7eZpHbxOw8se5bkMrFF7EVapMoExy/UZx5qll76t28gFwFO3ksZlTUzhOoKmG5NRVknnJ627pEb554QwN0wxhhTCHmKeWJs2D3PE5BsmQoUXcDdBIU3P0LtyHCPPHOJpgnrn01UmqX7BUq5CqqYvgLMvagALBUXvPEn3DB/bMPo03mgevAC3OaJ8yf62ArlPkpnIZzFDvwzSUEhQM11BZA0a7ChoTFtq5Akj0XfN6izOSmcNi2LmHv7mnugd/0bB+v04M307bQDFdiR1AIKQo1mR1iN6z+K3Bky/qVvHVknftGjKW8At8Pnsp2yNXzxPV9yTPwWYeIVjHqvFmrTFPGn6tzDr7z+WJbGpl0fqBonDAQymOBeQrGywOIQvhiyJcM5unHWgfRRvA5O+r7LSPTNPq/e4/2XhsOMYvYDIfPPJ5zA5Aw/d6MxzDq4wYI2IpHBOsx7U+ohMoBqmP/o3Oo0sphi1hz5+pAUI4K3UiPliMLjz2YynQxKH8pHPqKVANx0tKkR3juwZIBoWnlB5wFLgp41yeaNpE16vexuOm+zA4PwDoL3MuHJTfzgOCmegrJYh4G8dQXUOhHujmfgr6eiGg9EVPx1St18ILIMZjKMZg+eLiaeeFy7HuczES+sSgn9XPmr8aFF1DRjHuxMNXqJzQF89Bke/PvQgB1UR/vHNiZnTx2n8QMGPkhb4vNU0OaChSMo/4UvJykKXjsh5/UOOw/Cz7o/CSiKaaZMFu/r8D6CsR37FmW5c+vE1xs/H0MOmTzl40M8S8Gdn/yHEe7WEcdPRrdY1WfQaBDGnmSqkqvaDv/oPAZqKpfNfjUUkJH6FfMsxGST3wT8caNGzdu3Lhx4/+FfwBakzuznYc9QQAAAABJRU5ErkJggg=="></div>
+                <tr>
+                    <td>주문날짜</td>
+                    <td>제품명</td>
+                    <td>단가</td>
+                    <td>수량</td>
+                    <td>금액</td>
+                    <td>삭제</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>삭제</td>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <td colspan="5"></td>
+                    <td>주문하기</td>
+                </tr>
+            </tfoot>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

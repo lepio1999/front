@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+         
+            margin: 0;
+            padding: 0;
+        }
+        
+
+        .main {
+            width: 1903px;
+            margin: 0 auto;
+            border: 5px solid blue;
+            
+        }
+
+        header {
+            width: 100%;
+            height: 200px;
+            background-color: rgb(77, 69, 69);
+            position: relative;
+            margin: 0 auto;
+        }
+
+        .header_title {
+            width: 100%;
+            position: absolute;
+            left: 100px;
+            top: 30px;
+        }
+
+        .header_title_img {
+            width: 200px;
+            height: 150px;
+            background-position: center;
+            background-size: cover;
+            border-radius: 50%;
+            position: absolute;
+            left: 50px;
+        }
+
+        .header_search {
+            position: absolute;
+            right: 10px;
+            bottom: 20px;
+        }
+
+        .header_search_box {
+            position: relative;
+        }
+
+        .header_search input {
+            width: 250px;
+            height: 50px;
+            border-radius: 30px;
+        }
+
+        .header_search_box_img {
+            width: 40px;
+            height: 40px;
+            border: 1px solid black;
+            position: absolute;
+            right: 20px;
+            top: 10px;
+            background-image: url(https://search.pstatic.net/sunny/?src=https%3A%2F%2Fmedia.istockphoto.com%2Fvectors%2Femployee-looking-search-job-black-icon-vector-id1250032571%3Fs%3D612x612&type=a340);
+            background-position: center;
+            background-size: cover;
+            border: 0px;
+        }
+
+        nav {
+            width: 100%;
+            height: 100px;
+            background-color: rgb(90, 100, 100);
+            display: flex;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        section {
+            width: 99.9%;
+            height: 1300px;
+            margin: 0 auto;          
+            border: 0.1px solid black;  
+        }
+
+        .section_wrap {
+            width: 100%;            
+            margin: 0 auto;            
+            margin-top: 60px;
+            border: 10px solid purple;
+        }
+
+        .section_img{
+        width: 300px;
+        height: 400px;
+        margin: 0 auto;
+        border-radius: 20px;
+
+        
+
+        background-image: url();
+        background-position: center;
+        background-size: cover;
+        border: 1px solid black;
+    }
+
+
+ 
+
+
+
+
+        .menu-wrap li {
+            width: 300px;
+
+            text-align: center;
+            list-style: none;
+            margin: 20px;
+
+        }
+        footer {
+            width: 100%;
+            height: 150px;
+            margin: 0 auto;
+            background-color: rgb(77, 69, 69);
+            border: 5px solid green;
+        }
+
+        .foot_item {
+            display: flex;
+            height: 100px;
+            margin-top: 30px;
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+            border: 5px solid red;
+            
+        }
+
+        .item_box {
+            width: 33%;
+            margin-left: 50px;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .menu-item>ul {
+            display: none;
+        }
+
+        .menu-wrap {
+            display: flex;
+            margin: 0 auto;
+        }
+
+        .menu-item {
+            height: 10px;
+            color: white;
+        }
+
+        h1 {
+            text-align: center;
+            line-height: 200px;
+            font-size: 50px;
+            color: white;
+        }
+
+        .menu-item:hover ul {
+            display: block;
+            text-align: center;
+            color: white;
+            padding: 5px;
+            background-color: rgb(90, 100, 100);
+
+            
+        }
+
+        .menu-item li {
+            padding: 10px;
+            width: 100px;
+            margin: 0 auto;
+            background-color: rgb(90, 100, 100);
+        }
+
+        .nav_item_login {
+            position: absolute;
+            right: 80px;
+            color: white;
+        }
+        .menu_title{
+            font-size: 20px;
+            color: white;
+        }
+        .menu_se{
+            color: white;
+        }
+       
+        a{
+            color: white;
+        }
+
+        .ex_wrap{
+        width: 350px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+        border-radius: 10px;
+        text-align: center;
+        }
+
+        .section_info{
+        width: 400px;
+        margin: 0 auto;
+        text-align: left;
+        border: 1px solid black;
+        }
+        .section_info input{
+            width: 80%;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main">
+        <header>
+            <div class="header_title"><img class="header_title_img"
+                src="https://search.pstatic.net/common/?src=https%3A%2F%2Fmodo-phinf.pstatic.net%2F20220311_71%2F1646980713637dE6Vu_PNG%2FmosaE1DSnG.png&type=a340">
+        </div>
+        <h1>Guhwang</h1>
+        <div class="header_search">
+            <div class="header_search_box">
+                <input type="text">
+                <div class="header_search_box_img"></div>
+            </div>
+        </div>
+        </header>
+
+        <nav>
+            <ul class="menu-wrap">
+
+                <!--상위 메뉴-->
+                <li class="menu-item"><span class="menu_title">감자</span>
+
+                    <!-- 하위 숨김메뉴-->
+                    <ul class="menu_se">
+                        <li>1등급</li>
+                        <li>2등급</li>
+
+                    </ul>
+                </li>
+                <!--상위 메뉴-->
+                <li class="menu-item"><span class="menu_title">고구마</span>
+                    <!-- 하위 숨김메뉴-->
+                    <ul class="menu_se">
+                        <li>1등급</li>
+                        <li>2등급</li>
+
+                    </ul>
+                </li>
+                <!--상위 메뉴-->
+                <li class="menu-item"><span class="menu_title">옥수수</span>
+                    <!-- 하위 숨김메뉴-->
+                    <ul class="menu_se">
+                        <li>1등급</li>
+                        <li>2등급</li>
+                    </ul>
+                </li>
+
+            </ul>
+            <div class="nav_item_login">
+                <a href="">로그인</a> 
+                | 
+                <a href="">홈으로</a>
+            </div>
+
+        </nav>
+
+        <section>
+            <div class="section_wrap">
+                <div class="section_img"></div>
+                <div class="ex_wrap">
+                    <h2><strong>왕감자</strong></h2>
+                    <p>크고 맛있는 감자입니다.</p>
+                    <p>가격: 39000원 / 3kg</p>
+                </div>
+                <div class="section_info">
+                    <p>--주문내역--</p>
+                    <p>주문자이름</p>
+                    <input type="text" >    
+                    <p>수량</p>
+                    <select >
+                        <option>수량을 선택하세요</option>
+                        <option>10개/ 30000원</option>
+                        <option>20개/ 60000원</option>
+                        <option>30개/ 90000원</option>
+                    </select>
+                    <p>주문금액</p>
+                    <input type="text">
+                    <p>전화번호</p>
+                    <input type="text">
+                    <button>주문하기</button>
+                </div>
+            </div>
+            
+            
+        
+        </section>
+        <footer>
+            <div class="foot_item">
+                <div class="item_box">허재혁</div>
+                <div class="item_box">COMPANY : Potatoes USA Korea</div>
+                <div class="item_box">Copyright All Rights Reserved © 2020</div>
+            </div>
+        </footer>
+    </div>
+    
+</body>
+</html>

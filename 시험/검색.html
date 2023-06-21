@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        header{
+            height: 100px;
+            background-color: rgb(245, 248, 248);
+            border: 1px solid black;
+            position: relative;
+
+        }
+
+        .header_title{
+            position: absolute;
+            left: 10px;
+            top: 20px;
+            border: 1px solid black;
+
+        }
+        .header_title_img{
+            width: 200px;
+            height: 70px;
+            background-position: center;
+            background-size: cover;                        
+        }
+
+
+        
+        .header_search{
+            position: absolute;
+            right: 10px;
+            bottom: 20px;
+            border: 1px solid black;
+        }
+        
+        .header_search_box{
+            position: relative;
+            border: 1px solid black;
+        }
+
+        .header_search input{
+            width: 250px;
+            height: 50px;
+
+        }
+
+        .header_search_box_img{
+            width: 30px;
+            height: 30px;
+            border: 1px solid black;
+            position: absolute;
+            right: 10px;
+            top: 5px;
+        }
+
+        nav{
+            height: 40px;
+            padding: 20px;
+            background-color: rgb(232, 243, 243);
+            border: 1px solid black
+        }
+        .nav_item{
+            text-align: right;
+            line-height: 50px;
+                }
+        section{
+            height: 600px;
+            margin-top: 50px;
+            border: 1px solid black;
+        }
+        .section_wrap{
+            width: 1400px;
+            height: 300px;
+            border: 1px solid black;
+            margin: 0 auto;
+            display: flex;
+            margin-top: 50px;
+            
+        }
+        .section_wrap img{
+            height: 200px;
+            width: 200px;
+
+
+        }
+       
+        ul{
+            display: flex;
+            margin: 0 auto;
+            position: relative;
+
+
+        }
+        .section_btn1{
+            width: 130px;
+            padding: 10px;
+            background-color: beige;
+            color: red;
+            border-radius: 10px;
+            border: 1px solid black;
+            position: absolute;
+            top: 10px;
+            left: 250px;
+            
+
+        }
+
+        .section_btn2{
+            width: 130px;
+            padding: 10px;
+            background-color: beige;
+            color: red;
+            border-radius: 10px;
+            border: 1px solid black;
+            position: absolute;
+            top: 10px;
+            left: 632px;
+            
+
+        }
+
+        .section_btn3{
+            width: 130px;
+            padding: 10px;
+            background-color: beige;
+            color: red;
+            border-radius: 10px;
+            border: 1px solid black;
+            position: absolute;
+            top: 10px;
+            right: 23px;
+            
+
+        }
+        
+        li{
+            width: 300px;
+            border: 0.5px solid black;
+            padding: 30px;
+            border: 0.5px solid rgb(15, 15, 15);
+            text-align: center;
+            list-style: none;
+            margin: 20px;
+            
+
+                }
+        footer{
+            padding: 20px;
+            background-color:  rgb(233 , 239 , 239 );
+            border: 1px solid black;
+        
+            }
+        .item{
+            display: flex;
+            border: 1px solid black;
+
+        }
+        .item_img{
+            border: 1px solid black;
+            width: 33%;
+
+            
+        }
+        .item_box{
+            border: 1px solid black;
+            width: 33%;
+            margin-left: 50px;
+            text-align: center;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <div></div>
+    <header>
+        <div class="header_title"><img class="header_title_img" src="https://publy.imgix.net/bootcamp/logo/acornedu-co-kr_1683019133.png?w=200&h=200&auto=format&fm=png"></div>
+        <div class="header_search">
+            <div class="header_search_box">
+                <input type="text">
+                <img class="header_search_box_img" src="" >
+            </div>
+        </div>
+    </header>
+    <nav>
+        <div class="nav_item">
+            로그인 | 홈으로
+        </div>
+    </nav>
+    <section>
+        <div class="section_wrap">
+            <ul>
+                <li><img src=""><br>프로젝트기반 빅데이터 분석과정
+                <div class="section_btn1">
+                    bigdata
+                </div>
+                </li>
+                <li><img src=""><br>자바(JAVA)&안드로이드 개발자 양성과정
+                
+                <div class="section_btn2">
+                    Android
+                </div>
+                </li>
+                <li><img src=""><br>웹기반 프론트앤드 자바개발자 양성과정
+                <div class="section_btn3">
+                    Front
+                </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <div class="item">
+            <div class="item_img"></div>
+            <div class="item_box">에이콘(ACADEMY)홍대</div>
+            <div class="item_box">COPYRIGHT(C) HBILAB ALL RIGHTS RESERVED.</div>
+        </div>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .wrap{
+        width: 500px;
+        padding: 20px;
+        border: 1px solid black;
+        margin: 0 auto;
+        background-color: antiquewhite;
+    }
+    .section_img{
+        width: 300px;
+        height: 350px;
+        margin: 0 auto;
+        border-radius: 20px;
+
+        
+
+        background-image: url(https://search.pstatic.net/common/?src=http%3A%2F%2Fcafefiles.naver.net%2Fdata21%2F2008%2F2%2F29%2F203%2F%25C8%25B2%25C5%25C2%25B4%25F6%25C0%25E5-047_kim2989.jpg&type=a340);
+        background-position: center;
+            background-size: cover;
+    }
+    .ex_wrap{
+        width: 350px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+        border-radius: 10px;
+
+
+    }
+    .section_info{
+        width: 400px;
+        margin: 0 auto;
+
+    }
+    input {
+            width: 80%;
+            height: 20px;
+    }
+    select{
+        width: 80%;
+        height: 20px;
+    
+
+    }
+    button{
+        border-radius: 20px;
+
+    }
+    p {
+        margin-bottom: 0px;
+    }
+
+
+</style>
+<body>
+    <!--전체 영역-->
+    <div class="section_wrap">
+        <!--상품 이미지 영역-->
+        <div class="section_img"></div>
+        <!--상품 설명 영역-->
+        <div class="ex_wrap">
+            <h2><strong>대관령 황태</strong></h2>
+            <p>겨울 내내 녹았다얼었다를 반복한 맛 좋은 대관령 황태입니다.</p>
+            <p>가격: 30000원/10마리</p>
+        </div>
+        <!--주문하기 영역-->
+        <p class="section_info">
+            <p>--주문내역--</p>
+            <p>주문자이름</p>
+            <input type="text" >
+
+            <p>수량</p>
+            <select>
+                <option>수량을 선택하세요</option>
+                <option>10개/ 30000원</option>
+                <option>20개/ 60000원</option>
+                <option>30개/ 90000원</option>
+            </select>
+            <p>주문금액</p>
+            <input type="text">
+            <p>전화번호</p>
+            <input type="text">
+            <button>주문하기</button>
+        </div>
+
+    </div>
+    
+    
+</body>
+</html>

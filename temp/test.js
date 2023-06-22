@@ -1,0 +1,2 @@
+
+alert("hello javascript2");

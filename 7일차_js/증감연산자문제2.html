@@ -1,0 +1,30 @@
+//<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        let a=10, b=10;
+        let result1, result2;
+
+        --a; //원래9
+        //출력 9
+        
+        a--; //원래8
+        //출력9
+        
+        result1 = a-- + b++; //원래7 )출력8+ 원래11) 출력10= 18
+
+        result2 = ++a + --b; //출력 8 + 출력10 =18
+
+        console.log(result1);
+        console.log(result2);
+
+    </script>
+    
+</body>
+</html>

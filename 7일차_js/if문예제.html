@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>나이를 입력 받아서 성인인지 판단나는 프로그램 작성하기</h2>
+    <!--prompt()입력-->
+    <script>
+        //입력
+        let age = prompt("나이를 입력하세요.");
+        let result;
+        //판단, 처리
+        if( age >= 20){
+            result = "당신의 나이는(" + age +")살 성인입니다";
+        }
+        else if (age < 20){
+            result = "당신의 나이는(" + age +")살 미성년자입니다";
+        }
+        else{
+            result = "나이를 제대로 입력해주세요."
+        }
+        //출력
+        alert(result);
+        
+    </script>
+    
+</body>
+</html>

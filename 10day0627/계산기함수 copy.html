@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+
+    <script>
+        function 더하기() {
+            let num1 = prompt("숫자를 입력하세요");
+            let num2 = prompt("더할 숫자를 입력하세요");
+            let sum;
+
+            sum = num1 + num2;
+            
+            return sum;
+        }
+
+        function 빼기() {
+            let num1 = prompt("숫자를 입력하세요");
+            let num2 = prompt("뺄 숫자를 입력하세요");
+            let sum;
+            sum = num1 - num2;
+            return sum;        
+        }
+
+        function 곱하기() {
+            let num1 = prompt("숫자를 입력하세요");
+            let num2 = prompt("곱할 숫자를 입력하세요");
+            let sum;
+            sum = num1 * num2;
+            return sum;        
+        }
+
+
+        function 나누기() {
+            let num1 = prompt("숫자를 입력하세요");
+            let num2 = prompt("나눌 숫자를 입력하세요");
+            let sum;
+            sum = num1 / num2;
+            return sum;        
+        }
+        
+   
+        let result_더하기 = 더하기();
+        document.write(result_더하기+"<br>");
+
+        let result_빼기 = 빼기();
+        document.write(result_빼기+"<br>");
+
+        let result_곱하기 = 곱하기();
+        document.write(result_곱하기+"<br>");
+
+        let result_나누기 = 나누기();
+        document.write(result_나누기+"<br>");
+
+       
+    </script>
+    
+</body>
+</html>

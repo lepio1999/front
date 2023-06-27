@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        while(true){        
+        let jum = prompt("점수를 입력하세요");
+
+        let hak; //점수를 저장
+
+            if(jum < 0){
+                alert("종료합니다.");
+                break;
+
+            }
+            else if (jum >= 90) {
+                hak = 'A';
+            }
+            else if (jum >= 80) {
+                hak = 'B';
+            } else  {
+                hak = 'F';
+            }
+
+            alert("학점은" +hak+ "점입니다.");
+
+        }
+    
+
+
+        
+
+    </script>
+
+</body>
+
+</html>

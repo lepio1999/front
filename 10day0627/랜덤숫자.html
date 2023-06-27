@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        let user_num;
+        let com_num;
+
+
+        com_num = Math.floor(Math.random() * 100);
+
+        alert(com_num);
+
+        for (let i = 0; i < 3; i++) {
+            user_num = prompt("숫자를 선택해주세요");
+
+
+            if (user_num == com_num) {
+                alert("승리");
+                break;
+            }
+             
+            else if(user_num != com_num) {
+                alert("틀렸습니다.")
+            }
+            else{
+                alert("숫자를 입력해주세요");
+            }
+        }
+
+
+
+
+    </script>
+
+</body>
+
+</html>

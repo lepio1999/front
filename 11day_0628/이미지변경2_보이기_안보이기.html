@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <img src="imgs/boy.png" id="pimg" onclick="changeImg()">
+
+    <button onclick="chagneImg1()">이미지 변경 소녀</button>
+    <button onclick="changeImg2()">이미지 변경 소년</button>
+
+
+    <script>
+
+
+        function chagneImg1(){
+            let pimg = document.getElementById("pimg");
+            //alert(pimg);
+            pimg.src="imgs/girl.png";
+        }
+
+        function changeImg2(){
+            let pimg = document.getElementById("pimg");
+            pimg.src="imgs/boy.png";
+        }
+        
+
+    </script>
+
+</body>
+
+</html>

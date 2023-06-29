@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        // 내장객체 Math , Date
+
+        let currentDate = new Date(); //현재 날짜객체생성
+
+        console.log(currentDate);
+
+        let currentyear =  currentDate.getFullYear();
+        console.log(currentyear);   //2023
+                                    //태어난 년도
+
+        let bornDate = new Date("1999-10-15");
+        console.log(bornDate);
+
+        let bornYear = bornDate.getFullYear();
+        console.log(bornYear);
+
+        //나이 구하기
+        //현재년도 - 태어난년도 +1
+        document.write((currentyear - bornYear)+1);
+    </script>
+    
+</body>
+</html>

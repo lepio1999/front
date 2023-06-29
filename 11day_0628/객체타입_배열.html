@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        let snackNameArry = [
+            "맛동산", "빼빼로", "오징어땅콩"
+        ];
+
+        let snackObjectArry = [
+            {
+                name: "맛동산",
+                price: 4200,
+                weight: 300
+
+            }, {
+                name: "빼뺴로",
+                price: 1500,
+                weight: 70
+
+            }, {
+                name: "오징어땅콩",
+                price: 2500,
+                weight: 180
+
+            }
+        ];
+
+        alert(snackNameArry);
+
+        let firstSnackName = snackObjectArry[0].name;
+        let firstSnackPrice = snackObjectArry[0].price;
+        let firstSnackweight = snackObjectArry[0].weight;
+
+        alert(firstSnackName);
+        alert(firstSnackPrice);
+        alert(firstSnackweight);
+
+        let firstSnackName1 = snackObjectArry[1].name;
+        let firstSnackPrice1 = snackObjectArry[1].price;
+        let firstSnackweight1 = snackObjectArry[1].weight;
+
+        alert(firstSnackName1);
+        alert(firstSnackPrice1);
+        alert(firstSnackweight1);
+
+        let firstSnackName2 = snackObjectArry[2].name;
+        let firstSnackPrice2 = snackObjectArry[2].price;
+        let firstSnackweight2 = snackObjectArry[2].weight;
+
+        alert(firstSnackName2);
+        alert(firstSnackPrice2);
+        alert(firstSnackweight);
+
+        snackObjectArry[0].name = "새우깡";
+        snackObjectArry[0].price = 1200;
+        snackObjectArry[0].weight = 80;
+
+        firstSnackName = snackObjectArry[0].name;
+        firstSnackPrice = snackObjectArry[0].price;
+        firstSnackweight = snackObjectArry[0].weight;
+
+        alert(firstSnackName);
+        alert(firstSnackPrice);
+        alert(firstSnackweight);
+
+        
+    </script>
+
+</body>
+
+</html>

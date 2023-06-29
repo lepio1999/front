@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+
+        //작성자: 
+        //기능: 성인인지판단하는 기능 제공
+        //입력: 샌년월일
+        // 반환: true (어른) , false(어른x)
+
+        function isAdult2(bornDateString) {
+            alert(bornDateString);
+            //전체 날짜 가져오기
+            let currentDate = new Date();
+            //받아올 날짜
+            let bornDate = new Date(bornDateString); //"2020-01-10" => 객체로 변환
+
+            let currentyear = currentDate.getFullYear(); //2023
+            let bornYear = bornDate.getFullYear();  //2010
+
+
+            let age = currentyear - bornYear;
+            alert(age);
+
+            if(age > 19){
+                return true;
+            }else{
+                return false;
+            }
+            
+        }
+
+        //
+
+        //함수를 만드는 법
+        //함수를 사용하는 법
+        //함수의 반환값을 사용하는 법
+
+        let result = isAdult2("2010-01-10"); // 함수 사용
+        alert(result);
+        // 성인이면 물건을 구매할 수 있다.
+       /* if( result == true){
+            alert("물건을 구매할 수 있다. !!!");
+        }else{
+            alert("물건을 구매할 수 없다. !!!");
+        }*/
+
+    </script>
+
+</body>
+
+</html>

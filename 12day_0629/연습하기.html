@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .color{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="color" id="main"></div>
+    <button onclick="clik()">버튼입니다</button>
+
+    <script>
+        let flag=1;
+        function clik(){
+            if(flag==1){
+            let main = document.getElementById("main");
+            main.style.backgroundColor = "blue";
+                let flag = 0;
+            }else{
+                let main = document.getElementById("main");
+                main.style.backgroundColor = "none";
+            }
+        }
+
+    </script>
+    
+</body>
+</html>

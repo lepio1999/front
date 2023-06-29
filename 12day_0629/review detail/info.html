@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .all{
+            width: 1200px;
+            height: 100%;
+            border: 1px solid rgb(10, 10, 10);
+            margin: 0 auto;
+        }
+
+        .main{
+            width: 700px;
+            height: 100%;
+            border: 1px solid red;
+            
+            margin: 0 auto;
+        }
+
+        .header{
+            height: 220px;
+            border: 1px solid blue;
+  
+            
+        }
+        .header_title{
+            width: 100%;
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 80px;
+            border: 1px solid black;
+
+        }
+
+        .section1{
+            width: 100%;
+
+            height: 250px;
+            border: 1px solid green;
+            display: flex;
+
+        }
+
+        .section1_img{
+            height: 100%;
+            width: 50%;
+            border: 1px solid black;
+            text-align: center;
+            
+        }
+        img{
+            border: 1px solid black;
+            width: 200px;
+            height: 130px;
+        }
+        .section1_input{
+            width: 200px;
+            height: 130px;
+
+
+        }
+        .section1_hoo{
+            height: 100%;
+            width: 50%;
+            border: 1px solid black;
+            text-align: center;
+
+        }
+        .section2{
+            width: 100%;
+            height: 250px;
+            border: 1px solid yellow;
+
+        }
+        .section2_wrap{
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+
+        }
+        .section2_title{
+            margin: 0 auto;
+            text-align: center;
+            margin-top: 70px;
+            font-weight: bold;
+        
+        }
+        h4{
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .section2_text{
+            width: 200px;           
+        }
+        .section3{
+            width: 100%;
+            height: 140px;
+            border: 1px solid purple;
+
+        }
+        .section3_wrap{
+            width: 90%;
+            margin: 0 auto;
+        }
+        .section3_text{
+            width: 100%;
+        }
+
+        .section4{
+            height: 140px;
+            border: 1px solid orange;
+
+        }
+        .section4_wrap{
+            width: 90%;
+            margin: 0 auto;
+        }
+
+                /* 좋아요 버튼 */
+        .a_wrap_like_btn{
+            display: block;
+            text-decoration-line: none;
+            color: black;
+            width: 50px;
+            padding: 10px;
+            position: fixed;
+            right: 5px;
+            bottom: 50px;
+        }
+
+        .wrap_like_btn{
+            width: 50px;
+            text-align: center;
+            font-size: 13px;
+            font-weight: lighter;
+            
+        }
+        .wrap_like_btn img{
+            width: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--좋아요 버튼-->
+    <a href="#" class="a_wrap_like_btn">
+        <div class="wrap_like_btn">
+            <div>좋아요~</div>
+            <img src="https://i.postimg.cc/6p1ZDLLp/pngwing-com.png" alt="좋아요 버튼 로고">
+        </div>
+    </a>
+    <!--전체-->
+    <div class="all">
+        <!--main창-->
+        <div class="main">
+            <!--헤더-->
+            <div class="header">
+            <div class="header_title">REVIEW DETAIL</div>    
+            </div>
+            <!--section1-->
+            <div class="section1">
+                <div class="section1_img">
+                    <h4>이미지</h4>
+                    <img src="ㅇㄹ"></div>
+                <div class="section1_hoo">
+                    <h4>맛평가 후기</h4>
+                    <input class="section1_input" type="text">
+                </div>
+            </div>
+            <!--section2-->
+            <div class="section2">
+                <div class="section2_wrap">
+                    <div class="section2_title">연령대<input class="section2_text" type="text" name="" id=""></div>
+                    <div class="section2_title">만족도<input class="section2_text" type="text" name="" id=""></div>
+                    <div class="section2_title">성별<input class="section2_text" type="text" name="" id=""></div>
+                </div>  
+            </div>
+            <!--section3-->
+            <div class="section3">
+                <div class="section3_wrap">
+                    <h4>판매점정보 (구매 사이트)</h4>
+                    <input class="section3_text" type="text">
+                </div>
+            </div>
+            <!--section4-->
+            <div class="section4">
+                <div class="section4_wrap">
+                    <h4>더 나누고 싶은 정보</h4>
+                    <textarea name="e_text" id="" cols="90" rows="3"></textarea>
+                    
+                </div>            
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+</head>
+<body>
+    <div id ="mybtn"> 눌러봐</div>
+    <div id ="content">혼나볼래</div>
+    <button onclick="style1()">배경색 추가</button>
+    <button onclick="style2()">이미지 추가</button>
+    <button onclick="style3()">배경색 제거</button>
+    <button onclick="style4()">이미지 제거</button>
+    <button onclick="style5()">내용 바꾸기</button>
+
+
+
+    <script>
+        function style1(){
+            let mybtnE = document.getElementById("mybtn")
+
+            mybtnE.style.width="100px";
+            mybtnE.style.height="50px";
+            mybtnE.style.backgroundColor="green";
+ 
+        }
+
+        function style2(){
+            let mybtnE = document.getElementById("mybtn");
+            mybtnE.style.width="300px";
+            mybtnE.style.height = "500px";
+            mybtnE.style.backgroundImage="url(https://search.pstatic.net/common/?src=http%3A%2F%2Fcafefiles.naver.net%2FMjAxNzA5MTVfMzMg%2FMDAxNTA1NDczMDQxOTAz.lzSGc7WPz1DBErSgalXAQKzPquwQCSdf8KT9L5fdU-og.wyQ0cqv2IvpqyNWciOIpYDld4jfeDzXIVK2GJr5kwJMg.JPEG.ysicos8468%2F1505473017170.JPEG&type=a340)";
+            mybtnE.style.backgroundSize="cover";
+            mybtnE.style.backgroundPosition="center";
+
+        }
+
+        function style3(){
+            let mybtnE = document.getElementById("mybtn");
+            mybtn.style.backgroundColor="transparent";
+        }
+
+        function style4(){
+            let mybtnE = document.getElementById("mybtn");
+            mybtn.style.backgroundImage="none";
+        }
+
+        function style5(){
+            let mybtnE = document.getElementById("content");
+            content.innerHTML="뭘봐!!";
+            
+        }
+    </script>
+    
+</body>
+</html>

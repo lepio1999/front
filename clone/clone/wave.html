@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section {
+            width: 1484px;
+            height: 498px;
+            background-color: #1b1b1b;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .title {
+            width: 1240px;
+            height: 36px;
+            display: flex;
+            left: 120px;
+            margin: 0 0 20px;
+            position: relative;
+        }
+
+        .title_label {
+            width: 230px;
+            height: 36px;
+            color: #fffff8;
+            font-size: 24px;
+            line-height: 36px;
+        }
+
+        .title a {
+            width: 64.17px;
+            height: 34px;
+            color: #a5a5a5;
+            position: absolute;
+            top: 7px;
+            right: 0;
+            padding: 5px 20px 5px 0;
+            font-size: 16px;
+            text-decoration-line: none;
+        }
+
+        .content {
+            width: 1240px;
+            height: 440px;
+            margin: 0 auto;
+            display: flex;
+            position: relative;
+
+        }
+
+        .content_info {
+            width: 240px;
+            height: 360px;
+            margin-right: 10px;
+            overflow: hidden;
+            border-radius: 20px;
+
+
+
+        }
+
+        .content_info img {
+            transition: all 0.2s linear;
+
+        }
+
+        .content_info img:hover {
+            transform: scale(1.2, 1.2);
+        }
+
+        /*숨겼다가 나올 버튼*/
+        .pre_btn {
+
+            width: 30px;
+            height: 50px;
+            position: absolute;
+            top: 155px;
+            background-color: #a5a5a5;
+            font-size: 35px;
+            color: #fffff8;
+        }
+
+
+        .next_btn {
+            width: 30px;
+            height: 50px;
+            position: absolute;
+            top: 155px;
+            right: 10px;
+            background-color: #a5a5a5;
+            font-size: 35px;
+            color: #fffff8;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <section>
+        <!--타이틀-->
+        <div class="title">
+            <div class="title_label"><span>실시간 인기 콘텐츠</span></div>
+            <a href="">더보기></a>
+        </div>
+        <!--콘텐츠 목록-->
+        <div class="content">
+            <div class="content_info">
+                <img src="https://image.wavve.com/v1/thumbnails/240_360_20_80/meta/image/202305/1684835658652320306.webp"
+                    alt="">
+            </div>
+
+            <div class="content_info">
+                <img src="https://image.wavve.com/v1/thumbnails/240_360_20_80/meta/image/202306/1687500900893568393.webp"
+                    alt="">
+            </div>
+
+            <div class="content_info">
+                <img src="https://image.wavve.com/v1/thumbnails/240_360_20_80/meta/image/202305/1683859424490303614.webp"
+                    alt="">
+            </div>
+
+            <div class="content_info">
+                <img src="https://image.wavve.com/v1/thumbnails/240_360_20_80/BMS/TVSeason/2022/M_1002831100000100000-Vertical_LogoY.webp"
+                    alt="">
+            </div>
+
+            <div class="content_info">
+                <img src="https://image.wavve.com/v1/thumbnails/240_360_20_80/BMS/TVSeason/2022/K02_T2022-0649-Vertical_LogoY.webp"
+                    alt="">
+            </div>
+            <!--버튼-->
+            <div class="pre_btn" onclick="">
+                <span><</span> </div>
+
+            <div class="next_btn"><span>></span>
+                    </div>
+            </div>
+
+            <script>
+                // JavaScript 코드
+                let imageContainer = document.querySelector('.content');
+                let preBtn = document.querySelector('.pre_btn');
+                let nextBtn = document.querySelector('.next_btn');
+
+                imageContainer.addEventListener('mouseover', function () {
+                    preBtn.style.opacity = '1';
+                    nextBtn.style.opacity = '1';
+                });
+
+                imageContainer.addEventListener('mouseout', function () {
+                    preBtn.style.opacity = '0';
+                    nextBtn.style.opacity = '0';
+                });
+
+                nextBtn.addEventListener('mouseover', function () {
+                    nextBtn.style.opacity = '1';
+                });
+
+                nextBtn.addEventListener('mouseout', function () {
+                    nextBtn.style.opacity = '0';
+                });
+            </script>
+    </section>
+
+</body>
+
+</html>
